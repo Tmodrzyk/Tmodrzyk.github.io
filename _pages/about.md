@@ -2,16 +2,13 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: PhD student in Deep Learning | <a href='https://www.creatis.insa-lyon.fr/site7/fr/tomoradio'>Tomoradio team</a> | <a href='https://www.creatis.insa-lyon.fr/site7/en'>CREATIS Lab</a> | Claude Bernard Lyon 1 University
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  image_circular: true # crops the image to make it circular
+  more_info: 
 
 news: true  # includes a list of news items
 latest_posts: true  # includes a list of the newest posts
@@ -19,8 +16,6 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I'm a 1st year PhD student in Deep Learning applied to medical imaging at the CREATIS lab. My interests are in the application of diffusion models to inverse problems and to the Compton Camera reconstruction problem. 
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I graduated from the [*Data & Intelligence for Smart Systems*](http://master-info.univ-lyon1.fr/DISS/) Master's degree from the Computer Science department of Claude Bernard Lyon 1 University. I've done a 6 months research internship at [Thales](https://www.thalesgroup.com/fr) for my Master's thesis, focusing on Deep Learning applied to subresolved infrared target detection.
