@@ -2,96 +2,68 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Thibaut Modrzyk
     - name: Date of Birth
-      value: 14th March 1879
+      value: 21st October 1999
     - name: Languages
-      value: English, German
+      value: French, English
+    - name: Programming Languages
+      value: Python, C, C++, Java
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Data & Intelligence for Smart Systems Master's degree
+      institution: Claude Bernard Lyon 1 University, Lyon, France
+      year: 2023
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - Syllabus focused on Big Data, Machine Learning and Computer Vision
+        - Head of class
+            
+    - title: Computer Science Bachelor's degree
+      institution: Claude Bernard Lyon 1 University, Lyon, France
+      year: 2021
       description:
-        - Description 1.
-        - Description 2.
+        - Syllabus focused on C++ and Java with elective courses on machine learning and parallel programming
+
+    - title: Mathematics Bachelor's degree
+      institution: Grenoble-Alpes University, Grenoble, France
+      year: 2020
+      description:
+        - Topology, Group and Ring algebra, Measure Theory and advanced calculus 
+
+    - title: Prep school for French Engineering Schools
+      institution: Jean-Perrin Highschool, Lyon, France
+      year: 2017-2019
+      description:
+        - Multidisciplinary syllabus focused on Maths and Physics, with chemistry and computer science classes
+        - Head of class during both years
+        - Passed with honours
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Deep Learning intern
+      institution: Service Traitement d'Image, Thales LAS, Elancourt
+      year: 2023
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Deep Leaning for subresolved infrared targets segmentation
+
+    - title: CUDA software developer intern
+      institution: Laboratoire d'Informatique du Parallélisme, Lyon
+      year: 2021
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
+        - Development of CUDA kernels to replace Fortran operators for matrix factorization
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Deep Learning
       items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Diffusion models
+    - title: Inverse Problems
       items:
-        - Description 1.
-        - Description 2.
+        - Post-processing approaches
+        - Plug-and-Play
 
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+
