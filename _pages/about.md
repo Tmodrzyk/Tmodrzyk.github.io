@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: PhD student in Deep Learning | <a href='https://www.creatis.insa-lyon.fr/site7/fr/tomoradio'>Tomoradio team</a> | <a href='https://www.creatis.insa-lyon.fr/site7/en'>CREATIS Lab</a> | Claude Bernard Lyon 1 University
 
