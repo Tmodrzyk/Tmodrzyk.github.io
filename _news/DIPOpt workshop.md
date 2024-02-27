@@ -17,8 +17,5 @@ On tuesday evening I had the chance to eat with [Adrien Taylor](https://scholar.
 
 On the last day [Julian Tachella](https://scholar.google.co.uk/citations?user=u_hH-fUAAAAJ&hl=es) presented a python framework for inverse problems named [DeepInv](https://deepinv.github.io/deepinv/) to which I would love to contribute to.
 
-
 {% include figure.html path="assets/img/DIPOpt.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
 Picture taken on the 28th of November 2023, with the organizers and the participants of DIPOpt.
-
-
