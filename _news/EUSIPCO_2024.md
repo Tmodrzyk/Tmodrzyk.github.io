@@ -1,18 +1,20 @@
 ---
 layout: post
+title: EUSIPCO 2024
 date: 2024-08-29
 inline: False
 related_posts: false
 ---
 
 [EUSIPCO 2024](https://eusipcolyon.sciencesconf.org/)
-{% include figure.html path="assets/img/EUSIPCO_LYON.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.html path="assets/img/EUSIPCO_Lyon.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ***
 
 During the last week of August 2024, I had the pleasure of attending the 24th European Signal Processing Conference in Lyon.
 I really enjoyed the conference, which brought me a lot of new experiences. In fact, I was both presenting my work and being part of the staff, which was a very good experience.
 Seeing the backstage of the conference was very interesting and I got to enjoy some extra delicious lunch boxes.
+
 I was lucky enough to present my poster on the first day, which attracted a lot of people, many from different countries.
 I had the pleasure of talking to fellow signal processing enthusiasts from South America, Japan, Lebanon, and Germany, to name a few.
 
