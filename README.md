@@ -1,3 +1,57 @@
+# Thibaut Modrzyk — personal website
+
+A Jekyll site with manuscript typography inspired by my thesis. The existing
+al-folio publication, blog, and CV tooling is retained; the visual layer lives
+in `_sass/_manuscript.scss` and the homepage in `_layouts/about.html`.
+
+## Local preview (Docker)
+
+```sh
+bin/site up --build
+```
+
+Open http://localhost:8080. Source edits rebuild automatically and refresh the
+browser. Restart with `bin/site restart` after changing `_config.yml`.
+Stop with Ctrl-C, or `bin/site down` if started in the background.
+The `bin/site` wrapper matches your local user so generated files stay editable.
+Docker installs the pinned Ruby and Bundler versions independently of your
+shell's Ruby installation. It preserves `Gemfile.lock`.
+
+## Native Ruby alternative
+
+Install Ruby 3.2.2 (specified in `.ruby-version`), then:
+
+```sh
+gem install bundler -v 2.4.22
+bundle _2.4.22_ install
+bundle exec jekyll serve --port 8080 --livereload
+```
+
+ImageMagick and Jupyter nbconvert are needed for the existing image/notebook
+content. Use Docker to get these dependencies automatically.
+
+## Build and deployment
+
+```sh
+bin/site run --rm jekyll bundle exec jekyll build
+```
+
+The output is `_site/`. GitHub Actions builds and publishes pushes to `main`
+or `master`; pull requests only build. Local preview does not publish anything.
+The lockfile, Ruby version, and Dockerfile should be updated together.
+
+## Editing
+
+- Biography: `_pages/about.md`
+- Publications: `_bibliography/`
+- News: `_news/`
+- Articles: `_posts/`
+- Fonts and attribution: `assets/fonts/manuscript/`
+
+---
+
+## Original theme documentation
+
 # al-folio
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [maintainers]: https://img.shields.io/badge/maintainers-4-success.svg 'Number of maintainers'
@@ -233,13 +287,13 @@ You need to take the following steps to get `al-folio` up and running on your lo
 - Finally, run the following command that will pull the latest pre-built image from DockerHub and will run your website.
 
 ```bash
-$ docker compose pull
-$ docker compose up
+$ bin/site pull
+$ bin/site up
 ```
 
 Note that when you run it for the first time, it will download a docker image of size 400MB or so. 
 
-Now, feel free to customize the theme however you like (don't forget to change the name!). After you are done, you can use the same command (`docker compose up`) to render the webpage with all you changes. Also, make sure to commit your final changes.
+Now, feel free to customize the theme however you like (don't forget to change the name!). After you are done, you can use the same command (`bin/site up`) to render the webpage with all you changes. Also, make sure to commit your final changes.
 
 > To change port number, you can edit `docker-compose.yml` file.
 
@@ -250,7 +304,7 @@ Now, feel free to customize the theme however you like (don't forget to change t
 Build and run a new docker image using:
 
 ```bash
-$ docker compose up --build
+$ bin/site up --build
 ```
 
 > If you want to update jekyll, install new ruby packages, etc., all you have to do is build the image again using `--force-recreate` argument at the end of the previous command! It will download Ruby and Jekyll and install all Ruby packages again from scratch.
@@ -723,3 +777,22 @@ The theme is available as open source under the terms of the [MIT License](https
 
 Originally, **al-folio** was based on the [\*folio theme](https://github.com/bogoli/-folio) (published by [Lia Bogoev](https://liabogoev.com) and under the MIT license).
 Since then, it got a full re-write of the styles and many additional cool features.
+
+## Writing a blog post
+
+Create `_posts/YYYY-MM-DD-your-title.md` with this front matter, followed by
+Markdown. It will appear in the blog, homepage, and RSS feed automatically.
+Dates in the future stay hidden until that date.
+
+```yaml
+---
+layout: post
+title: Your title
+date: YYYY-MM-DD 12:00:00 +0200
+description: A short introduction for the blog index.
+---
+```
+
+Use `##` for sections, `###` for subsections, and ordinary Markdown for links,
+images, lists, and quotes. There is no required topic or category. For a private
+work in progress, add `published: false` to the front matter.

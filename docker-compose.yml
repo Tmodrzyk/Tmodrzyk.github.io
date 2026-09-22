@@ -1,10 +1,11 @@
-version: "3"
-# this file uses prebuilt image in dockerhub
 services:
   jekyll:
-    image: amirpourmand/al-folio:latest
     build: .
+    user: "${LOCAL_UID:-1000}:${LOCAL_GID:-1000}"
     ports:
-      - 8080:8080
+      - "127.0.0.1:8080:8080"
+      - "127.0.0.1:35729:35729"
     volumes:
       - .:/srv/jekyll
+    environment:
+      JEKYLL_ENV: development

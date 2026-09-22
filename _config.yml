@@ -8,10 +8,9 @@ middle_name:
 last_name: Modrzyk
 email: thibaut.modrzyk@creatis.insa-lyon.fr
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Thibaut Modrzyk — research in deep learning, medical imaging, and inverse problems.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website  # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
@@ -46,11 +45,11 @@ rss_icon: false
 # Layout
 # -----------------------------------------------------------------------------
 
-navbar_fixed: true
-footer_fixed: true
+navbar_fixed: false
+footer_fixed: false
 
 # Dimensions
-max_width: 800px
+max_width: 1120px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -68,7 +67,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 
 github_username: Tmodrzyk # your GitHub user name
 gitlab_username: # your GitLab user name
-x_username: # your X handle
+x_username: ytdeepia # your X handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 linkedin_username: thibaut-modrzyk-697668221 # your LinkedIn user name
 telegram_username: # your Telegram user name
@@ -119,9 +118,9 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Deep Learning tutorials # blog_name will be displayed in your blog page
+blog_name: Notes & marginalia
 blog_nav_title: Blog # your blog must have a title for it to be displayed in the nav bar
-blog_description: Articles about deep learning techniques I use, papers I read etc.
+blog_description: Research, stray thoughts, and things I feel like writing about.
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -136,9 +135,11 @@ related_blog_posts:
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out
 # the information below.
 giscus:
-  repo:                          # <your-github-user-name>/<your-github-repo-name>
-  category: Comments             # name of the category under which discussions will be created
-  mapping: title                 # identify discussions by post title
+  repo: Tmodrzyk/Tmodrzyk.github.io
+  repo_id: R_kgDOK2YfGQ
+  category: Announcements
+  category_id: DIC_kwDOK2YfGc4DGK3s
+  mapping: pathname              # identify discussions by the permanent page path
   strict: 1                      # use strict identification mode
   reactions_enabled: 1           # enable (1) or disable (0) emoji reactions
   input_position: bottom         # whether to display input form below (bottom) or above (top) the comments
@@ -203,6 +204,12 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - Dockerfile
+  - docker-compose.yml
+  - README.md
+  - CONTRIBUTING.md
+  - reports
+  - assets/pdf/preface.pdf
 keep_files:
   - CNAME
   - .nojekyll
@@ -362,13 +369,13 @@ enable_masonry:             true   # enables automatic project cards arrangement
 enable_math:                true   # enables math typesetting (uses MathJax)
 enable_tooltips:            false  # enables automatic tooltip links generated
                                    # for each section titles on pages and posts
-enable_darkmode:            true   # enables switching between light/dark modes
+enable_darkmode:            true    # enables switching between light/dark modes
 enable_navbar_social:       false  # enables displaying social links in the
                                    # navbar on the about page
 enable_project_categories:  true   # enables categorization of projects into
                                    # multiple categories
 enable_medium_zoom:         true   # enables image zoom feature (as on medium.com)
-enable_progressbar:         true   # enables a horizontal progress bar linked to the vertical scroll position
+enable_progressbar:         false   # enables a horizontal progress bar linked to the vertical scroll position
 
 # -----------------------------------------------------------------------------
 # Library versions

@@ -7,12 +7,20 @@
       value: 21st October 1999
     - name: Languages
       value: French, English
-    - name: Programming Languages
-      value: Python, C, C++, Java
+    - name: Programming Language
+      value: Python
 
 - title: Education
   type: time_table
   contents:
+    - title: PhD in Signal and Image Processing
+      institution: INSA Lyon and CREATIS Laboratory, Lyon, France
+      year: 2023-2026
+      description:
+        - "Thesis: Convergent multiplicative algorithms for regularized Poisson inverse problems"
+        - Supervised by Voichita Maxim, with Elie Bretin and Ane Etxebeste
+        - Public defense 19 November 2026
+
     - title: Data & Intelligence for Smart Systems Master's degree
       institution: Claude Bernard Lyon 1 University, Lyon, France
       year: 2023
@@ -54,16 +62,5 @@
       year: 2021
       description:
         - Development of CUDA kernels to replace Fortran operators for matrix factorization
-
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Deep Learning
-      items: 
-        - Diffusion models
-    - title: Inverse Problems
-      items:
-        - Post-processing approaches
-        - Plug-and-Play
 
 

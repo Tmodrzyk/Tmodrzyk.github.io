@@ -2,6 +2,9 @@
   {%- if site.giscus.repo -%}
   <script>
     let giscusTheme = localStorage.getItem("theme");
+    if (giscusTheme === null || giscusTheme === "null") {
+      giscusTheme = "{{ site.giscus.theme }}";
+    }
     let giscusAttributes = {
         "src": "https://giscus.app/client.js",
         "data-repo": "{{ site.giscus.repo }}",
