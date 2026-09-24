@@ -6,7 +6,7 @@ inline: false
 related_posts: false
 ---
 
-[POPILS 2025 in Annecy](https://popils-day.github.io/)
+[[POPILS 2025 in Annecy](https://popils-day.github.io/)](https://popils-day.github.io/)
 
 ***
 
